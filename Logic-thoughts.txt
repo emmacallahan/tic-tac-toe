@@ -42,4 +42,11 @@ Basic:
                   21. Program prints 'Congratulations Player () You've won!'
                 b. if no
                   22. Program reprints board with that space filled in
-  23. Return to step 1 until Step 7 or 21 returns yes
+  23. Return to step 1 until Step 7 or 21 returns yes.
+  Possible break down into Objects
+  print.board()
+  check.if.space.is.free()
+  print.player.prompts()
+  check.if.three.in.a.row()
+  print.win.statement()
+  
