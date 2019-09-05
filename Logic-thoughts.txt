@@ -11,42 +11,26 @@ There are 7 possible winning combinations:
   A1-B2-C3
   C1-B2-A3
 Basic:
-  1. Player 1 chooses a space
-  2. Player 1 types in the space to the input field
-  3. Program reads the input
-  4. Program checks if space is free
+  1. Start: Program prints empty board
+  2. Program checks if one of the winning combinations exist
       a. if no
-          5. Program prompts player to pick another space
-              -return to step 1
+        3. Prompt Player () to choose a space
+        4. Player () chooses a space
+        5. Player () types in the space to the input field
+        6. Program reads the input
+        7. Program checks if space is free
+              a. if no
+                8. Program prompts Player () to pick another space
+                    -return to step 1-
+              b. if yes
+                    9. Program places X or O in that space
+        10. Program reprints board with that space filled in
       b. if yes
-          6. Program places X in that space
-          7. Program checks if any of the winning combinations exist
-              a. if yes
-                9. Program reprints board with that space filled in
-                10. Program prints 'Congratulations Player () You've won!'
-              b. if no
-                11. Program reprints board with that space filled in
-  12. Program prompts player 2 to choose a square
-  13. Player 2 chooses a space
-  14. Player 2 types in the space to the input field
-  15. Program reads the input
-  16. Program checks if space is free
-        a. if no
-            17. Program prompts player to pick another space
-                -return to step 1
-        b. if yes
-            18. Program places O in that space
-            19. Program checks if any of the winning combinations exist
-                a. if yes
-                  20. Program reprints board with that space filled in
-                  21. Program prints 'Congratulations Player () You've won!'
-                b. if no
-                  22. Program reprints board with that space filled in
-  23. Return to step 1 until Step 7 or 21 returns yes.
+          11. Program prints 'Congratulations Player () You've won!'
+
   Possible break down into Objects
   print.board()
   check.if.space.is.free()
   print.player.prompts()
   check.if.three.in.a.row()
   print.win.statement()
-  
